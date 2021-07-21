@@ -1,0 +1,4 @@
+*{margin:0px;padding:0px;}
+body{padding:10px;font-family:arial;font-size:13px;}
+h1{margin:0px 0px 10px 0px;padding:2px;border-bottom:1px solid #ffffff}
+input[type="submit"]{padding:8px;border:1px solid #333333;background:#ffff00;border-radius:3px;}

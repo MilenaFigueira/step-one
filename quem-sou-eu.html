@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <h1>Quem sou eu?</h1>
-    <p>SOu o Leonardo Breda</p>
+    <p>Sou o Leonardo Breda</p>
+    <p>Utilizei o e-mail <span id="email">null</span> e a senha <span id="email">null</span> no login.</p>
+
+    <br />
+    <p>Hoje é dia <span id="dia">null</span> de <span id="mes">null</span> de <span id="ano">null</span></p>
+
+
 </body>
+<script>
+    //Captura os valores depois da "?" no endereço
+    var querystring = new URLSearchParams(window.location.search);
+    document.getElementById('email').innerHTML = querystring.get('email');
+
+    //Captura a data do computador
+    const data = new Date();
+    document.getElementById("dia").innerHTML = data.getDate();
+
+    document.getElementById("mes").innerHTML = data.getMonth();
+  
+</script>
 </html>

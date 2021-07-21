@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style_login.css" />
+    <style>
+        
+    </style>
+</head>
+<body style="background:#222222;">
+
+    <form name="frm_login" method="GET" action="quem-sou-eu.html"
+        class="formulario_login" 
+        style="width:500px;margin:50px auto;padding:20px;border:1px solid #666666;border-radius:5px" 
+        onsubmit="javascript:return valida_frm_login();">
+    <h1 style="color:#ffffff;">Login</h1>
+    <br />
+    
+    
+    <p style="color:#eaeaea;">E-mail: <input type="email" name="email" size="30" maxlength="7"/></p>
+    <br />
+    <p style="color:#eaeaea;">Senha: <input type="password" name="senha" size="30" maxlength="50"/></p>
+
+    <p style="text-align: center;margin:20px 0px 0px 0px;">
+        <input type="submit" value="Login"  style="font-weight:bold;"/></p>
+       </form>
+
+    </body>
+    <script>
+        function valida_frm_login()
+        {
+            if(document.frm_login.email.value=='')
+            {
+                alert('Preencha o campo e-mail');
+                document.frm_login.email.focus();
+                return false;
+            }
+
+
+           
+        }
+    </script>
+</html>
