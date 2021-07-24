@@ -9,11 +9,11 @@
 </head>
 <body>
     <h1>Quem sou eu?</h1>
-    <p>Sou o Leonardo Breda</p>
-    <p>Utilizei o e-mail <span id="email">null</span> e a senha <span id="email">null</span> no login.</p>
+    <p>Sou a Milena Figueira</p>
+    <p>Utilizei o e-mail <span id="email">mi@figueira</span> e a senha <span id="password">123</span> em login.</p>
 
     <br />
-    <p>Hoje é dia <span id="dia">null</span> de <span id="mes">null</span> de <span id="ano">null</span></p>
+    <p>Hoje é dia <span id="dia">24</span> de <span id="mes">julho</span> de <span id="ano">2021</span></p>
 
 
 </body>
@@ -22,10 +22,16 @@
     var querystring = new URLSearchParams(window.location.search);
     document.getElementById('email').innerHTML = querystring.get('email');
 
+    //Captura os valores depois da "?" no endereço
+    var querystring = new URLSearchParams(window.location.search);
+    document.getElementById('senha').innerHTML = querystring.get('senha');
+
+
     //Captura a data do computador
     const data = new Date();
     document.getElementById("dia").innerHTML = data.getDate();
-
+ //Captura o mes do computador
+     const mes = new mes();
     document.getElementById("mes").innerHTML = data.getMonth();
   
 </script>

@@ -1,4 +1,7 @@
 *{margin:0px;padding:0px;}
-body{padding:10px;font-family:arial;font-size:13px;}
+body{padding:10px;font-family:arial;font-size:13px;background:#2b2a2a}
 h1{margin:0px 0px 10px 0px;padding:2px;border-bottom:1px solid #ffffff}
-input[type="submit"]{padding:8px;border:1px solid #333333;background:#ffff00;border-radius:3px;}
+input[type="submit"]{padding:8px;border:1px solid #424242;background:#ffff00;border-radius:3px;color:#000000; 
+    text-align:center ;margin:20px 0px 0px 0px}
+    p{font-weight:bold}
+    form{width:500px;margin:50px auto;padding:20px;border:1px solid #666666;border-radius:5px}
